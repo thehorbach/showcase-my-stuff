@@ -10,12 +10,16 @@
 		11C5C65C1CB02B8400BCBD59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5C65B1CB02B8400BCBD59 /* AppDelegate.swift */; };
 		11C5C65E1CB02B8400BCBD59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5C65D1CB02B8400BCBD59 /* ViewController.swift */; };
 		11C5C6611CB02B8400BCBD59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C65F1CB02B8400BCBD59 /* Main.storyboard */; };
-		11C5C6631CB02B8400BCBD59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C6621CB02B8400BCBD59 /* Assets.xcassets */; };
-		11C5C6661CB02B8400BCBD59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C6641CB02B8400BCBD59 /* LaunchScreen.storyboard */; };
 		11C5C6751CB12E2100BCBD59 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C6711CB12E2100BCBD59 /* NotoSans-Bold.ttf */; };
 		11C5C6761CB12E2100BCBD59 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C6721CB12E2100BCBD59 /* NotoSans-BoldItalic.ttf */; };
 		11C5C6771CB12E2100BCBD59 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C6731CB12E2100BCBD59 /* NotoSans-Italic.ttf */; };
 		11C5C6781CB12E2100BCBD59 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C6741CB12E2100BCBD59 /* NotoSans-Regular.ttf */; };
+		11C5C67A1CB1338700BCBD59 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5C6791CB1338700BCBD59 /* MaterialView.swift */; };
+		11C5C67D1CB1340200BCBD59 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5C67C1CB1340200BCBD59 /* Constants.swift */; };
+		11C5C67F1CB13A5C00BCBD59 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5C67E1CB13A5C00BCBD59 /* MaterialButton.swift */; };
+		11C5C6811CB13D9500BCBD59 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5C6801CB13D9500BCBD59 /* MaterialTextField.swift */; };
+		11C5C6851CB142A500BCBD59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C6841CB142A500BCBD59 /* Assets.xcassets */; };
+		11C5C6891CB144F300BCBD59 /* Launch-Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C6881CB144F300BCBD59 /* Launch-Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +27,17 @@
 		11C5C65B1CB02B8400BCBD59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11C5C65D1CB02B8400BCBD59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11C5C6601CB02B8400BCBD59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		11C5C6621CB02B8400BCBD59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		11C5C6651CB02B8400BCBD59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11C5C6671CB02B8400BCBD59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11C5C6711CB12E2100BCBD59 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		11C5C6721CB12E2100BCBD59 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		11C5C6731CB12E2100BCBD59 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		11C5C6741CB12E2100BCBD59 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		11C5C6791CB1338700BCBD59 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		11C5C67C1CB1340200BCBD59 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		11C5C67E1CB13A5C00BCBD59 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		11C5C6801CB13D9500BCBD59 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		11C5C6841CB142A500BCBD59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11C5C6881CB144F300BCBD59 /* Launch-Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch-Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +70,16 @@
 		11C5C65A1CB02B8400BCBD59 /* showcase-my-stuff */ = {
 			isa = PBXGroup;
 			children = (
+				11C5C67B1CB133E300BCBD59 /* Util */,
 				11C5C6701CB12DF600BCBD59 /* Resources */,
 				11C5C66F1CB12DE400BCBD59 /* Model */,
 				11C5C66E1CB12DDB00BCBD59 /* View */,
 				11C5C66D1CB12DD500BCBD59 /* Controller */,
-				11C5C65B1CB02B8400BCBD59 /* AppDelegate.swift */,
-				11C5C65D1CB02B8400BCBD59 /* ViewController.swift */,
 				11C5C65F1CB02B8400BCBD59 /* Main.storyboard */,
-				11C5C6621CB02B8400BCBD59 /* Assets.xcassets */,
-				11C5C6641CB02B8400BCBD59 /* LaunchScreen.storyboard */,
+				11C5C65B1CB02B8400BCBD59 /* AppDelegate.swift */,
 				11C5C6671CB02B8400BCBD59 /* Info.plist */,
+				11C5C6841CB142A500BCBD59 /* Assets.xcassets */,
+				11C5C6881CB144F300BCBD59 /* Launch-Screen.storyboard */,
 			);
 			path = "showcase-my-stuff";
 			sourceTree = "<group>";
@@ -79,6 +87,7 @@
 		11C5C66D1CB12DD500BCBD59 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				11C5C65D1CB02B8400BCBD59 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -86,6 +95,9 @@
 		11C5C66E1CB12DDB00BCBD59 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				11C5C6791CB1338700BCBD59 /* MaterialView.swift */,
+				11C5C67E1CB13A5C00BCBD59 /* MaterialButton.swift */,
+				11C5C6801CB13D9500BCBD59 /* MaterialTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -106,6 +118,14 @@
 				11C5C6741CB12E2100BCBD59 /* NotoSans-Regular.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		11C5C67B1CB133E300BCBD59 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				11C5C67C1CB1340200BCBD59 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,12 +188,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				11C5C6751CB12E2100BCBD59 /* NotoSans-Bold.ttf in Resources */,
-				11C5C6661CB02B8400BCBD59 /* LaunchScreen.storyboard in Resources */,
 				11C5C6761CB12E2100BCBD59 /* NotoSans-BoldItalic.ttf in Resources */,
 				11C5C6771CB12E2100BCBD59 /* NotoSans-Italic.ttf in Resources */,
-				11C5C6631CB02B8400BCBD59 /* Assets.xcassets in Resources */,
+				11C5C6851CB142A500BCBD59 /* Assets.xcassets in Resources */,
 				11C5C6611CB02B8400BCBD59 /* Main.storyboard in Resources */,
 				11C5C6781CB12E2100BCBD59 /* NotoSans-Regular.ttf in Resources */,
+				11C5C6891CB144F300BCBD59 /* Launch-Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,8 +204,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C5C6811CB13D9500BCBD59 /* MaterialTextField.swift in Sources */,
+				11C5C67A1CB1338700BCBD59 /* MaterialView.swift in Sources */,
 				11C5C65E1CB02B8400BCBD59 /* ViewController.swift in Sources */,
 				11C5C65C1CB02B8400BCBD59 /* AppDelegate.swift in Sources */,
+				11C5C67D1CB1340200BCBD59 /* Constants.swift in Sources */,
+				11C5C67F1CB13A5C00BCBD59 /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,14 +222,6 @@
 				11C5C6601CB02B8400BCBD59 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		11C5C6641CB02B8400BCBD59 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11C5C6651CB02B8400BCBD59 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
