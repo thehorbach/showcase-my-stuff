@@ -1,0 +1,6 @@
+framework module Pods_showcase_my_stuff {
+  umbrella header "Pods-showcase-my-stuff-umbrella.h"
+
+  export *
+  module * { export * }
+}
