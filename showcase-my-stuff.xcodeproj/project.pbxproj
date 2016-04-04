@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1174D55E1CB3089C0026078A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1174D55D1CB3089C0026078A /* DataService.swift */; };
 		11C5C65C1CB02B8400BCBD59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5C65B1CB02B8400BCBD59 /* AppDelegate.swift */; };
 		11C5C65E1CB02B8400BCBD59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5C65D1CB02B8400BCBD59 /* ViewController.swift */; };
 		11C5C6611CB02B8400BCBD59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C65F1CB02B8400BCBD59 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1174D55D1CB3089C0026078A /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		11C5C6581CB02B8400BCBD59 /* showcase-my-stuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "showcase-my-stuff.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C5C65B1CB02B8400BCBD59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11C5C65D1CB02B8400BCBD59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1174D55C1CB308840026078A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1174D55D1CB3089C0026078A /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		11C5C64F1CB02B8400BCBD59 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		11C5C65A1CB02B8400BCBD59 /* showcase-my-stuff */ = {
 			isa = PBXGroup;
 			children = (
+				1174D55C1CB308840026078A /* Services */,
 				11C5C67B1CB133E300BCBD59 /* Util */,
 				11C5C6701CB12DF600BCBD59 /* Resources */,
 				11C5C66F1CB12DE400BCBD59 /* Model */,
@@ -280,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11C5C6811CB13D9500BCBD59 /* MaterialTextField.swift in Sources */,
+				1174D55E1CB3089C0026078A /* DataService.swift in Sources */,
 				11C5C67A1CB1338700BCBD59 /* MaterialView.swift in Sources */,
 				11C5C65E1CB02B8400BCBD59 /* ViewController.swift in Sources */,
 				11C5C65C1CB02B8400BCBD59 /* AppDelegate.swift in Sources */,

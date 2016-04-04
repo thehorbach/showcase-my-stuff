@@ -69,7 +69,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="UEI-t1-kzd">
                                                 <rect key="frame" x="0.0" y="22" width="65" height="65"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFM-k4-mls" customClass="MaterialButton" customModule="showcase_my_stuff" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFM-k4-mls" customClass="MaterialButton" customModule="showcase_my_stuff" customModuleProvider="target">
                                                 <rect key="frame" x="105" y="38" width="415" height="33"/>
                                                 <color key="backgroundColor" red="0.11764705882352941" green="0.53333333333333333" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
@@ -175,10 +175,31 @@
                             <constraint firstItem="UqP-hA-3ay" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wxQ-em-qss"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="vUu-C9-fdz" kind="show" identifier="loggedIn" id="nZe-sx-XuX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="325" y="385"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WMU-eU-FZ2">
+            <objects>
+                <viewController id="vUu-C9-fdz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mf9-Av-kIl"/>
+                        <viewControllerLayoutGuide type="bottom" id="hwe-Rv-Cm6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CgI-g9-wHK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xWJ-gJ-eyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="385"/>
         </scene>
     </scenes>
     <resources>
