@@ -13,16 +13,22 @@ import Firebase
 
 class ViewController: UIViewController {
 
-    let isGitWorking = "not sure"
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    //add this to a notepad!!!!
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
+            self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+        }
     }
     
     @IBAction func fbBtnPressed(sender: UIButton!) {
@@ -44,8 +50,8 @@ class ViewController: UIViewController {
                         print("Login failed. \(error)")
                     } else {
                         print("Logged in! \(authData)")
+                        self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
-                        self.performSegueWithIdentifier("loggedIn", sender: nil)
                     }
                     
                 })
@@ -54,6 +60,22 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func attemptLogin(sender: UIButton!) {
+        if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
+            
+        } else {
+            showErrorAlert("Email and Password Required", msg: "You must enter an email and password")
+        }
+    }
+    
+    //add this to a note pad!!!!!
+    
+    func showErrorAlert(title: String, msg: String) {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.Alert)
+        let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+        alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
+    }
 
 }
 
