@@ -63,6 +63,32 @@ class ViewController: UIViewController {
     @IBAction func attemptLogin(sender: UIButton!) {
         if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
             
+            DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { error, authData in
+                
+                if error != nil {
+                    print(error)
+                    
+                    if error.code == STATUS_USER_DOES_NOT_EXIST {
+                        DataService.ds.REF_BASE.createUser(email, password: pwd, withValueCompletionBlock: { error, result in
+                            
+                            if error != nil {
+                                self.showErrorAlert("Could not create account", msg: "Problem creating account, try something else :D")
+                                
+                            } else {
+                                NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID], forKey: KEY_UID)
+                                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: nil)
+                                self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+                            }
+                            
+                        })
+                    } else {
+                        self.showErrorAlert("Could not login", msg: "Could not loggin please check your username or password")
+                    }
+                } else {
+                    self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+                }
+                
+            })
         } else {
             showErrorAlert("Email and Password Required", msg: "You must enter an email and password")
         }
