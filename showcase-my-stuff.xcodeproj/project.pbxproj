@@ -21,6 +21,8 @@
 		11C5C6811CB13D9500BCBD59 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5C6801CB13D9500BCBD59 /* MaterialTextField.swift */; };
 		11C5C6851CB142A500BCBD59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C6841CB142A500BCBD59 /* Assets.xcassets */; };
 		11C5C6891CB144F300BCBD59 /* Launch-Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C6881CB144F300BCBD59 /* Launch-Screen.storyboard */; };
+		11E9EA551CB6C72F007B523B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9EA541CB6C72F007B523B /* FeedVC.swift */; };
+		11E9EA571CB6C85F007B523B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9EA561CB6C85F007B523B /* PostCell.swift */; };
 		136E25DD9A61631AA8A0553B /* Pods_showcase_my_stuff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19521BAA61C2362E98CE5A67 /* Pods_showcase_my_stuff.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		11C5C6801CB13D9500BCBD59 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		11C5C6841CB142A500BCBD59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11C5C6881CB144F300BCBD59 /* Launch-Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch-Screen.storyboard"; sourceTree = "<group>"; };
+		11E9EA541CB6C72F007B523B /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		11E9EA561CB6C85F007B523B /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		19521BAA61C2362E98CE5A67 /* Pods_showcase_my_stuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_showcase_my_stuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		860DE08F94E2C535170BACB1 /* Pods-showcase-my-stuff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-showcase-my-stuff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-showcase-my-stuff/Pods-showcase-my-stuff.debug.xcconfig"; sourceTree = "<group>"; };
 		8D45700A52AAE8071EAD989F /* Pods-showcase-my-stuff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-showcase-my-stuff.release.xcconfig"; path = "Pods/Target Support Files/Pods-showcase-my-stuff/Pods-showcase-my-stuff.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 				11C5C65A1CB02B8400BCBD59 /* showcase-my-stuff */,
 				11C5C6591CB02B8400BCBD59 /* Products */,
 				EAD13111A447AAA7D46C36E0 /* Pods */,
+				11C5C6701CB12DF600BCBD59 /* Resources */,
 				A6EDEECBB9A5EB42AA768D2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +94,6 @@
 			children = (
 				1174D55C1CB308840026078A /* Services */,
 				11C5C67B1CB133E300BCBD59 /* Util */,
-				11C5C6701CB12DF600BCBD59 /* Resources */,
 				11C5C66F1CB12DE400BCBD59 /* Model */,
 				11C5C66E1CB12DDB00BCBD59 /* View */,
 				11C5C66D1CB12DD500BCBD59 /* Controller */,
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				11C5C65D1CB02B8400BCBD59 /* ViewController.swift */,
+				11E9EA541CB6C72F007B523B /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 				11C5C6791CB1338700BCBD59 /* MaterialView.swift */,
 				11C5C67E1CB13A5C00BCBD59 /* MaterialButton.swift */,
 				11C5C6801CB13D9500BCBD59 /* MaterialTextField.swift */,
+				11E9EA561CB6C85F007B523B /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -136,6 +142,7 @@
 				11C5C6741CB12E2100BCBD59 /* NotoSans-Regular.ttf */,
 			);
 			name = Resources;
+			path = "showcase-my-stuff";
 			sourceTree = "<group>";
 		};
 		11C5C67B1CB133E300BCBD59 /* Util */ = {
@@ -294,6 +301,8 @@
 				1174D55E1CB3089C0026078A /* DataService.swift in Sources */,
 				11C5C67A1CB1338700BCBD59 /* MaterialView.swift in Sources */,
 				11C5C65E1CB02B8400BCBD59 /* ViewController.swift in Sources */,
+				11E9EA551CB6C72F007B523B /* FeedVC.swift in Sources */,
+				11E9EA571CB6C85F007B523B /* PostCell.swift in Sources */,
 				11C5C65C1CB02B8400BCBD59 /* AppDelegate.swift in Sources */,
 				11C5C67D1CB1340200BCBD59 /* Constants.swift in Sources */,
 				11C5C67F1CB13A5C00BCBD59 /* MaterialButton.swift in Sources */,

@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     }
     
     
-    //add this to a notepad!!!!
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -93,8 +92,6 @@ class ViewController: UIViewController {
             showErrorAlert("Email and Password Required", msg: "You must enter an email and password")
         }
     }
-    
-    //add this to a note pad!!!!!
     
     func showErrorAlert(title: String, msg: String) {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.Alert)
