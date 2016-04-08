@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113AF8F91CB7CB2E001444C1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AF8F81CB7CB2E001444C1 /* Post.swift */; };
 		1174D55E1CB3089C0026078A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1174D55D1CB3089C0026078A /* DataService.swift */; };
 		11C5C65C1CB02B8400BCBD59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5C65B1CB02B8400BCBD59 /* AppDelegate.swift */; };
 		11C5C65E1CB02B8400BCBD59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5C65D1CB02B8400BCBD59 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		113AF8F81CB7CB2E001444C1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1174D55D1CB3089C0026078A /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		11C5C6581CB02B8400BCBD59 /* showcase-my-stuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "showcase-my-stuff.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C5C65B1CB02B8400BCBD59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		11C5C66F1CB12DE400BCBD59 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				113AF8F81CB7CB2E001444C1 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				11C5C65C1CB02B8400BCBD59 /* AppDelegate.swift in Sources */,
 				11C5C67D1CB1340200BCBD59 /* Constants.swift in Sources */,
 				11C5C67F1CB13A5C00BCBD59 /* MaterialButton.swift in Sources */,
+				113AF8F91CB7CB2E001444C1 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
