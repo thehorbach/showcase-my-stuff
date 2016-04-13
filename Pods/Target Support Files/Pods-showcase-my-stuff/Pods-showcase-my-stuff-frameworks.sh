@@ -84,12 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-showcase-my-stuff/Alamofire.framework"
   install_framework "Pods-showcase-my-stuff/Bolts.framework"
   install_framework "Pods-showcase-my-stuff/FBSDKCoreKit.framework"
   install_framework "Pods-showcase-my-stuff/FBSDKLoginKit.framework"
   install_framework "Pods-showcase-my-stuff/Firebase.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-showcase-my-stuff/Alamofire.framework"
   install_framework "Pods-showcase-my-stuff/Bolts.framework"
   install_framework "Pods-showcase-my-stuff/FBSDKCoreKit.framework"
   install_framework "Pods-showcase-my-stuff/FBSDKLoginKit.framework"
