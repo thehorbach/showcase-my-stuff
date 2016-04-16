@@ -81,6 +81,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return tableView.estimatedRowHeight
         }
     }
+    
+    var sorryForNotCodingButIHaveALongEssayToFinishIPromiseToCatchAppLater = true
 }
 
 
