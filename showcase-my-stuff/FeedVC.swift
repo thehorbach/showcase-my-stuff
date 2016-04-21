@@ -9,11 +9,13 @@
 import UIKit
 import Firebase
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     var posts = [Post]()
     static var imageCache = NSCache()
+    
+    var imagePicker: UIImagePickerController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,8 +83,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return tableView.estimatedRowHeight
         }
     }
-    
-    var sorryForNotCodingButIHaveALongEssayToFinishIPromiseToCatchAppLater = true
 }
 
 
