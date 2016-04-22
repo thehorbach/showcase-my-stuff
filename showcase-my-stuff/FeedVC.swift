@@ -103,6 +103,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
     }
     
+    var tooTiredToday = true
+    
 }
 
 
