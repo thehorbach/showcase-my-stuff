@@ -102,11 +102,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     @IBAction func makePost(sender: AnyObject) {
         
     }
-    
-    var tooTiredToday = true
-    var tooTiredToday2 = true
-    var forgiveAgain = true
-    
 }
 
 
