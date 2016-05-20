@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Alamofire
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -101,6 +102,39 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     @IBAction func makePost(sender: AnyObject) {
         
+        if let txt = postField.text where txt != "" {
+            
+            if let img = imageSelectorImage.image {
+                let urlStr = "https://post.imageshack.us/upload_api.php"
+                let url = NSURL(string: urlStr)!
+                let imgData = UIImageJPEGRepresentation(img, 0.2)!
+                let keyData = "12DJKPSU5fc3afbd01b1630cc718cae3043220f3".dataUsingEncoding(NSUTF8StringEncoding)!
+                let keyJSON = "json".dataUsingEncoding(NSUTF8StringEncoding)!
+                
+                Alamofire.upload(.POST, url, multipartFormData: { multipartFormData in
+                    multipartFormData.appendBodyPart(data: imgData, name: "fileupload", fileName: "image", mimeType: "image/jpg")
+                    multipartFormData.appendBodyPart(data: keyData, name: "key")
+                    multipartFormData.appendBodyPart(data: keyJSON, name: "format")
+                }) { encodingResult in
+                    
+                    switch encodingResult {
+                    case .Success(let upload, _, _):
+                        upload.responseJSON(completionHandler: { response in
+                            if let info = response.result.value as? Dictionary<String, AnyObject> {
+                                if let links = info["links"] as? Dictionary<String, AnyObject> {
+                                    if let imgLink = links["image_link"] as? String {
+                                        print("LINK: \(imgLink)")
+                                    }
+                                }
+                            }
+                        })
+                        
+                    case .Failure(let err):
+                        print("YOU HAVE AN ERROR: \(err)")
+                    }
+                }
+            }
+        }
     }
 }
 
