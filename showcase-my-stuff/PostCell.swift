@@ -51,7 +51,7 @@ class PostCell: UITableViewCell {
                 })
             }
         } else {
-            self.showcaseImg.hidden = true
+            self.showcaseImg.hidden = false
         }
     }
 }
